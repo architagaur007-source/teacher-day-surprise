@@ -5,573 +5,715 @@
 
     <meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    <title>Teacher's Day | With Gratitude</title>
+    <title>Happy Teacher's Day, Ma'am 🌷</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+          rel="stylesheet">
 
 </head>
 
 
 <body>
 
+
     <!-- =====================================================
-         AMBIENT BACKGROUND
+         BACKGROUND EFFECTS
     ====================================================== -->
 
-    <div class="ambient-background">
-
-        <div class="glow glow-one"></div>
-        <div class="glow glow-two"></div>
-        <div class="glow glow-three"></div>
-
-        <div class="grid-background"></div>
-
-        <div class="floating-symbol symbol-one">✦</div>
-        <div class="floating-symbol symbol-two">✧</div>
-        <div class="floating-symbol symbol-three">·</div>
-        <div class="floating-symbol symbol-four">✦</div>
-        <div class="floating-symbol symbol-five">✧</div>
-
-        <div id="particles"></div>
-
-    </div>
-
+    <div class="sparkles"></div>
+    <div class="petals"></div>
 
 
     <!-- =====================================================
          PASSWORD SCREEN
     ====================================================== -->
 
-    <div id="passwordScreen">
+    <section class="password-screen"
+             id="passwordScreen">
 
         <div class="password-box">
 
-            <div class="password-decoration"></div>
-
-            <div class="lock-icon">
+            <div class="password-flower">
                 🔐
             </div>
 
-            <p class="password-label">
-                A PERSONAL MESSAGE
+            <p class="small-title">
+                A LITTLE SURPRISE AWAITS
             </p>
 
             <h1>
-                A Small Surprise
+                This is just for you
+                <span>Ma'am ✨</span>
             </h1>
 
             <p class="password-text">
-                This little page has been created especially
-                for you. Please enter the password to begin.
+                Enter the password to unlock your surprise.
             </p>
 
-            <input
-                type="password"
-                id="passwordInput"
-                placeholder="Enter password"
-                autocomplete="off"
-            >
 
-            <button onclick="checkPassword()">
-                Open Message
-                <span>→</span>
-            </button>
+            <div class="password-input-box">
 
-            <p id="errorMessage"></p>
+                <input
+                    type="password"
+                    id="passwordInput"
+                    placeholder="Enter password"
+                    maxlength="20"
+                    autocomplete="off"
+                >
+
+                <button type="button"
+                        onclick="checkPassword()">
+
+                    Unlock ✨
+
+                </button>
+
+            </div>
+
+
+            <p class="password-error"
+               id="passwordError">
+
+                Incorrect password.
+                Please try again. ❤️
+
+            </p>
+
+
+            <p class="password-hint">
+                A little surprise for you, Ma'am 🌷
+            </p>
 
         </div>
 
-    </div>
+    </section>
 
 
 
     <!-- =====================================================
-         MAIN PAGE
+         WEBSITE CONTENT
     ====================================================== -->
 
-    <main id="mainPage">
+    <div id="websiteContent"
+         class="locked">
 
 
         <!-- =================================================
-             HERO
+             BACKGROUND MUSIC
         ================================================== -->
 
-        <section class="hero">
+        <!--
+            Keep song.mp3 in the same folder as index.html
+        -->
 
-            <div class="hero-ring ring-one"></div>
-            <div class="hero-ring ring-two"></div>
+        <audio id="bgMusic"
+               preload="auto"
+               loop>
 
-            <div class="hero-content">
+            <source src="song.mp3"
+                    type="audio/mpeg">
 
-                <div class="hero-flower">
-                    🌸
-                </div>
+            Your browser does not support audio playback.
 
-                <p class="top-label">
-                    TEACHER'S DAY • A NOTE OF GRATITUDE
-                </p>
-
-                <h1>
-                    With
-                    <span>Gratitude</span>
-                </h1>
-
-                <p class="hero-text">
-                    Some teachers teach lessons.
-                    <br>
-                    Some leave lessons that last a lifetime.
-                </p>
-
-                <div class="scroll-indicator">
-                    ↓
-                    <small>Scroll to read</small>
-                </div>
-
-            </div>
-
-        </section>
-
+        </audio>
 
 
         <!-- =================================================
-             INTRODUCTION
+             OPENING
         ================================================== -->
 
-        <section class="content-section introduction">
+        <section class="screen active"
+                 id="opening">
 
-            <div class="content-card">
+            <div class="glow"></div>
 
-                <div class="section-heading">
+            <div class="opening-content">
 
-                    <p class="section-label">
-                        A FEW WORDS FROM THE HEART
-                    </p>
-
-                    <div class="heading-line"></div>
-
-                </div>
-
-                <h2>
-                    Dear Ma'am,
-                </h2>
-
-
-                <div class="intro-cards">
-
-                    <article class="intro-card">
-
-                        <div class="card-glow"></div>
-
-                        <div class="card-icon">
-                            ✦
-                        </div>
-
-                        <p>
-                            On this Teacher's Day, I wanted to do something
-                            a little different instead of simply sending
-                            a message or a greeting.
-                        </p>
-
-                    </article>
-
-
-                    <article class="intro-card">
-
-                        <div class="card-glow"></div>
-
-                        <div class="card-icon">
-                            ✧
-                        </div>
-
-                        <p>
-                            So, as a small expression of my gratitude,
-                            I created this page for you — combining
-                            something I am learning with something I
-                            genuinely wanted to say.
-                        </p>
-
-                    </article>
-
-
-                    <article class="intro-card">
-
-                        <div class="card-glow"></div>
-
-                        <div class="card-icon">
-                            ♡
-                        </div>
-
-                        <p>
-                            It may be a simple piece of code, but behind
-                            every section is a sincere thank you.
-                        </p>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =================================================
-             TEACHER APPRECIATION
-        ================================================== -->
-
-        <section class="appreciation-section">
-
-            <div class="appreciation-orb"></div>
-
-            <div class="appreciation-content">
-
-                <p class="section-label">
-                    MORE THAN A TEACHER
-                </p>
-
-                <div class="appreciation-divider"></div>
-
-                <h2>
-                    A Guide.
-                    <br>
-                    A Mentor.
-                    <br>
-                    An Inspiration.
-                </h2>
-
-                <div class="appreciation-message-box">
-
-                    <span>✦</span>
-
-                    <p class="appreciation-text">
-                        You gave us more than lessons to remember,
-                        you gave us values to carry throughout life.
-                    </p>
-
-                    <span>✦</span>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =================================================
-             MEMORIES
-        ================================================== -->
-
-        <section class="memories-section">
-
-            <div class="section-top-decoration">
-                ✦ &nbsp; ✧ &nbsp; ✦
-            </div>
-
-            <p class="section-label">
-                MEMORIES TO CHERISH
-            </p>
-
-            <h2>
-                Moments That Stay
-            </h2>
-
-            <p class="section-intro">
-                Time moves forward, but some moments remain
-                special simply because of the people connected
-                to them.
-            </p>
-
-
-            <div class="photo-container">
-
-
-                <div class="photo-card">
-
-                    <div class="photo-frame">
-
-                        <img
-                            src="photo1.jpeg"
-                            alt="A special memory"
-                        >
-
-                        <div class="photo-shine"></div>
-
-                    </div>
-
-                    <p>
-                        A memory worth remembering.
-                    </p>
-
-                </div>
-
-
-                <div class="photo-card">
-
-                    <div class="photo-frame">
-
-                        <img
-                            src="photo2.jpeg"
-                            alt="A special memory"
-                        >
-
-                        <div class="photo-shine"></div>
-
-                    </div>
-
-                    <p>
-                        A moment to cherish.
-                    </p>
-
-                </div>
-
-
-                <div class="photo-card">
-
-                    <div class="photo-frame">
-
-                        <img
-                            src="photo3.jpeg"
-                            alt="A special memory"
-                        >
-
-                        <div class="photo-shine"></div>
-
-                    </div>
-
-                    <p>
-                        A memory filled with gratitude.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =================================================
-             LETTER
-        ================================================== -->
-
-        <section class="letter-section">
-
-            <div class="letter-decoration letter-decoration-one">
-                ✦
-            </div>
-
-            <div class="letter-decoration letter-decoration-two">
-                ✧
-            </div>
-
-            <div class="letter">
-
-                <div class="letter-top">
-
-                    <span>✦</span>
-
-                    <p>
-                        A LETTER OF GRATITUDE
-                    </p>
-
-                    <span>✦</span>
-
-                </div>
-
-                <h2>
-                    Dear, Ma'am
-                </h2>
-
-
-                <div class="letter-message">
-
-
-                    <article class="letter-card">
-
-                        <div class="letter-badge">
-                            ✦ YOUR GUIDANCE
-                        </div>
-
-                        <p>
-                            You didn't just teach me subjects-you shaped who I am today.
-                            Even though classes have ended and time has moved on, your words, guidance, and care continue to stay with me.
-                            I may no longer sit in your classroom, but the lessons you taught still guide me through life.
-                        </p>
-
-                    </article>
-
-
-                    <article class="letter-card">
-
-                        <div class="letter-badge">
-                            ♡ WHAT YOU GAVE
-                        </div>
-
-                        <p>
-                            Missing you is proof that you gave me more than knowledge-you gave me values,confidence, and belief in myself. 
-                            I will always be grateful for everything you've done and will always carry your teachings in my heart.
-                        </p>
-
-                    </article>
-
-
-                    <article class="letter-card">
-
-                        <div class="letter-badge">
-                            ✧ YOUR COUNSEL
-                        </div>
-
-                        <p>
-                            Because of your wise counsel and guidance, I am emboldened to face the present
-                            with greater confidence. The lessons I have learned from you, both formal and
-                            informal, will always remain with me. Thank you seems too small for all the
-                            efforts you have made for me.
-                        </p>
-
-                    </article>
-
-
-                    <div class="letter-signature">
-
-                        <p class="letter-ending">
-                            With sincere respect and gratitude,
-                        </p>
-
-                        <p class="student-name">
-                            Your Student
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =================================================
-             FINAL MESSAGE
-        ================================================== -->
-
-        <section class="final-section">
-
-            <div class="final-light"></div>
-
-            <div class="final-content">
-
-                <div class="final-star">
-                    ✨
-                </div>
-
-                <p class="final-label">
-                    ONE LAST THOUGHT
-                </p>
-
-                <h2>
-                    FOR THE TEACHER WHO MADE
-                    A DIFFERENCE.
-                </h2>
-
-                <div class="final-message-card">
-
-                    <div class="quote-mark">
-                        “
-                    </div>
-
-                    <p class="final-message">
-                        “Thank you for being far more than
-                        just a teacher. Your lessons didn't
-                        end when the classroom did; they
-                        became values I carry with me,
-                        shaping the person I am and the
-                        person I aspire to become.”
-                    </p>
-
-                </div>
-
-                <div class="final-line"></div>
-
-                <p class="final-thanks">
-                    Thank you for being a light
-                    in my journey.
-                </p>
-
-                <div class="final-flower">
-                    🌸
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =================================================
-             TEACHER'S DAY WISH
-        ================================================== -->
-
-        <section class="wish-section">
-
-            <div class="wish-glow"></div>
-
-            <div class="wish-content">
-
-                <div class="wish-icon">
+                <div class="flower">
                     🌷
                 </div>
 
-                <p class="section-label">
-                    WITH RESPECT & GRATITUDE
+                <p class="small-title">
+                    A LITTLE SURPRISE FOR YOU
+                </p>
+
+                <h1>
+                    Happy Teacher's Day,
+                    <span>Ma'am</span>
+                </h1>
+
+                <p class="intro">
+                    I created something small,
+                    but from the heart. ❤️
+                </p>
+
+                <button
+                    type="button"
+                    class="main-btn"
+                    onclick="startSurprise()">
+
+                    ✨ Click to Begin ✨
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             MESSAGE 1
+        ================================================== -->
+
+        <section class="screen"
+                 id="message1">
+
+            <div class="card">
+
+                <div class="icon">
+                    🌷
+                </div>
+
+                <p class="small-title">
+                    BEFORE YOU CONTINUE...
                 </p>
 
                 <h2>
-                    Happy
-                    <span>Teacher's Day</span>
+                    There is something<br>
+                    I have always wanted to say.
                 </h2>
 
-                <div class="gold-line"></div>
+                <div class="line"></div>
 
-                <p>
-                    Thank you for being a meaningful part
-                    of my journey.
+                <p class="message">
+                    Some teachers teach from books,
+                    but the truly special ones teach
+                    from the heart.
+                </p>
+
+                <button
+                    type="button"
+                    class="main-btn"
+                    onclick="nextSection('message2')">
+
+                    Continue ✨
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             MESSAGE 2
+        ================================================== -->
+
+        <section class="screen"
+                 id="message2">
+
+            <div class="card wide">
+
+                <div class="icon">
+                    📚
+                </div>
+
+                <p class="small-title">
+                    MORE THAN LESSONS
+                </p>
+
+                <h2>
+                    You didn't just teach us subjects...
+                </h2>
+
+                <p class="big-message">
+
+                    You taught us how to believe in ourselves,
+                    how to face challenges with confidence,
+                    and how to keep learning even when things
+                    become difficult.
+
+                </p>
+
+                <p class="highlight">
+                    Your lessons didn't end when the classroom did.
+                </p>
+
+                <button
+                    type="button"
+                    class="main-btn"
+                    onclick="nextSection('cards')">
+
+                    There's more... 💫
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             APPRECIATION CARDS
+        ================================================== -->
+
+        <section class="screen"
+                 id="cards">
+
+            <div class="section-content">
+
+                <p class="small-title">
+                    A FEW THINGS I AM GRATEFUL FOR
+                </p>
+
+                <h2 class="section-title">
+                    Thank You, Ma'am ❤️
+                </h2>
+
+
+                <div class="cards-container">
+
+
+                    <!-- CARD 1 -->
+
+                    <div class="app-card"
+                         onclick="openCard(this)">
+
+                        <div class="card-front">
+
+                            <span>🌷</span>
+
+                            <h3>
+                                Your Guidance
+                            </h3>
+
+                            <p>
+                                Click to open
+                            </p>
+
+                        </div>
+
+
+                        <div class="card-back">
+
+                            <p>
+
+                                You didn't just teach me subjects -
+                                you shaped who I am today.
+                                I may no longer sit in your classroom,
+                                but the lessons you taught still guide
+                                me through life.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- CARD 2 -->
+
+                    <div class="app-card"
+                         onclick="openCard(this)">
+
+                        <div class="card-front">
+
+                            <span>✨</span>
+
+                            <h3>
+                                What You Gave
+                            </h3>
+
+                            <p>
+                                Click to open
+                            </p>
+
+                        </div>
+
+
+                        <div class="card-back">
+
+                            <p>
+
+                                Missing you is proof that you gave me
+                                more than knowledge - you gave me
+                                values, confidence, and belief in myself.
+                                I will always be grateful for everything
+                                you've done.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- CARD 3 -->
+
+                    <div class="app-card"
+                         onclick="openCard(this)">
+
+                        <div class="card-front">
+
+                            <span>📖</span>
+
+                            <h3>
+                                Your Counsel
+                            </h3>
+
+                            <p>
+                                Click to open
+                            </p>
+
+                        </div>
+
+
+                        <div class="card-back">
+
+                            <p>
+
+                                Because of your wise counsel and guidance,
+                                I face the present with greater confidence.
+                                The formal and informal lessons I learned
+                                from you will always remain with me, Ma'am.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- CARD 4 -->
+
+                    <div class="app-card"
+                         onclick="openCard(this)">
+
+                        <div class="card-front">
+
+                            <span>❤️</span>
+
+                            <h3>
+                                Your Impact
+                            </h3>
+
+                            <p>
+                                Click to open
+                            </p>
+
+                        </div>
+
+
+                        <div class="card-back">
+
+                            <p>
+
+                                Your words, patience and guidance
+                                have made a difference that I will
+                                always remember.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <button
+                    type="button"
+                    class="main-btn"
+                    onclick="nextSection('memories')">
+
+                    See Some Memories 📸
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             THREE PHOTO MEMORIES
+        ================================================== -->
+
+        <section class="screen"
+                 id="memories">
+
+            <div class="section-content">
+
+                <p class="small-title">
+                    A FEW BEAUTIFUL MEMORIES
+                </p>
+
+                <h2 class="section-title">
+                    Moments to Remember ❤️
+                </h2>
+
+                <p class="photo-intro">
+
+                    Some moments become special simply because
+                    of the people who are a part of them.
+                    These are a few memories I will always cherish.
+
                 </p>
 
 
-                <!-- CSE AIML SIGNATURE -->
+                <div class="photo-gallery">
 
-                <div class="developer-signature">
+                    <div class="photo-frame">
 
-                    <p>
-                        Designed with gratitude & code
-                    </p>
+                        <img
+                            src="photos/photo1.jpeg"
+                            alt="Memory with Ma'am"
+                        >
+
+                    </div>
+
+
+                    <div class="photo-frame">
+
+                        <img
+                            src="photos/photo2.jpeg"
+                            alt="Memory with Ma'am"
+                        >
+
+                    </div>
+
+
+                    <div class="photo-frame">
+
+                        <img
+                            src="photos/photo3.jpeg"
+                            alt="Memory with Ma'am"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="main-btn"
+                    onclick="nextSection('personal')">
+
+                    Continue with a Smile ✨
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             PERSONAL MESSAGE
+        ================================================== -->
+
+        <section class="screen"
+                 id="personal">
+
+            <div class="card wide personal-card">
+
+                <div class="icon">
+                    💌
+                </div>
+
+                <p class="small-title">
+                    FROM MY HEART
+                </p>
+
+                <h2>
+                    Thank You, Ma'am
+                </h2>
+
+                <div class="line"></div>
+
+
+                <p class="personal-message">
+
+                    Thank you for being far more than just a teacher.
+                    Your lessons didn't end when the classroom did;
+                    they became values I carry with me, shaping the
+                    person I am and the person I aspire to become.
+
+                </p>
+
+
+                <p class="personal-message">
+
+                    I may not always be able to express how much
+                    your guidance means to me, but I will always
+                    remember the patience, encouragement and
+                    knowledge you have given me.
+
+                </p>
+
+
+                <p class="special">
+
+                    Thank you for believing in your students. 🌷
+
+                </p>
+
+
+                <button
+                    type="button"
+                    class="main-btn"
+                    onclick="nextSection('music')">
+
+                    A Little More ✨
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             MUSIC
+        ================================================== -->
+
+        <section class="screen"
+                 id="music">
+
+            <div class="card music-card">
+
+                <div class="music-icon">
+                    🎵
+                </div>
+
+                <p class="small-title">
+                    A LITTLE MUSIC FOR YOU
+                </p>
+
+                <h2>
+                    This song is for you, Ma'am.
+                </h2>
+
+                <p class="message">
+
+                    Because some feelings are easier to express
+                    through music. ❤️
+
+                </p>
+
+
+                <button
+                    type="button"
+                    class="music-btn"
+                    onclick="toggleMusic()"
+                    id="musicButton">
+
+                    ▶ Play Music
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="main-btn"
+                    onclick="nextSection('final')">
+
+                    Final Message 🌷
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             FINAL
+        ================================================== -->
+
+        <section class="screen"
+                 id="final">
+
+            <div class="final-content">
+
+                <div class="final-flower">
+                    🌷
+                </div>
+
+                <p class="small-title">
+                    WITH GRATITUDE & RESPECT
+                </p>
+
+                <h1>
+                    Happy Teacher's Day,
+                    <span>Ma'am!</span>
+                </h1>
+
+                <div class="gold-line"></div>
+
+
+                <p class="final-message">
+
+                    Thank you for teaching,
+                    inspiring and believing in us.
+
+                </p>
+
+
+                <p class="quote">
+
+                    “The influence of a great teacher can never be erased.”
+
+                </p>
+
+
+                <div class="signature">
+
+                    With heartfelt gratitude,<br>
+
+                    <strong>
+                        From Your future software engineer student,
+                    </strong><br>
 
                     <span>
-                        By Your future Software Engineer Student 💻✨
+                        Archita Gaur 💻❤️
                     </span>
 
                 </div>
 
-                <p class="final-ending">
-                    With heartfelt gratitude,
-                    always.
-                </p>
+
+                <button
+                    type="button"
+                    class="restart-btn"
+                    onclick="restart()">
+
+                    ↻ Experience Again
+
+                </button>
 
             </div>
 
         </section>
 
-
-    </main>
-
+    </div>
 
 
     <script src="script.js"></script>
