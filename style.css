@@ -1760,3 +1760,26 @@ h1 span {
             19px;
     }
 }
+.photo-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    width: 100%;
+}
+
+.photo-frame {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.photo-frame img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain; /* Keeps the whole photo visible without cropping */
+    display: block;
+}
