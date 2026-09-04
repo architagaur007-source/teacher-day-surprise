@@ -1,31 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Teacher's Day, Ma'am 🌷</title>
-
-    <link rel="stylesheet"
-          href="style.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
-          rel="stylesheet">
-
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
-
-
 <body>
-
 
     <!-- =====================================================
          BACKGROUND EFFECTS
     ====================================================== -->
-
     <div class="sparkles"></div>
     <div class="petals"></div>
 
@@ -33,691 +19,224 @@
     <!-- =====================================================
          PASSWORD SCREEN
     ====================================================== -->
-
-    <section class="password-screen"
-             id="passwordScreen">
-
+    <section class="password-screen" id="passwordScreen">
         <div class="password-box">
-
-            <div class="password-flower">
-                🔐
-            </div>
-
-            <p class="small-title">
-                A LITTLE SURPRISE AWAITS
-            </p>
-
-            <h1>
-                This is just for you
-                <span>Ma'am ✨</span>
-            </h1>
-
-            <p class="password-text">
-                Enter the password to unlock your surprise.
-            </p>
-
-
+            <div class="password-flower">🔐</div>
+            <p class="small-title">A LITTLE SURPRISE AWAITS</p>
+            <h1>This is just for you <span>Ma'am ✨</span></h1>
+            <p class="password-text">Enter the password to unlock your surprise.</p>
+            
             <div class="password-input-box">
-
-                <input
-                    type="password"
-                    id="passwordInput"
-                    placeholder="Enter password"
+                <input 
+                    type="password" 
+                    id="passwordInput" 
+                    placeholder="Enter password" 
                     maxlength="20"
                     autocomplete="off"
                 >
-
-                <button type="button"
-                        onclick="checkPassword()">
-
-                    Unlock ✨
-
-                </button>
-
+                <button type="button" onclick="checkPassword()">Unlock ✨</button>
             </div>
-
-
-            <p class="password-error"
-               id="passwordError">
-
-                Incorrect password.
-                Please try again. ❤️
-
-            </p>
-
-
-            <p class="password-hint">
-                A little surprise for you, Ma'am 🌷
-            </p>
-
+            
+            <p class="password-error" id="passwordError">Incorrect password. Please try again. ❤️</p>
+            <p class="password-hint">A little surprise for you, Ma'am 🌷</p>
         </div>
-
     </section>
-
 
 
     <!-- =====================================================
          WEBSITE CONTENT
     ====================================================== -->
-
-    <div id="websiteContent"
-         class="locked">
-
-
-        <!-- =================================================
-             BACKGROUND MUSIC
-        ================================================== -->
-
-        <!--
-            Keep song.mp3 in the same folder as index.html
-        -->
-
-        <audio id="bgMusic"
-               preload="auto"
-               loop>
-
-            <source src="song.mp3"
-                    type="audio/mpeg">
-
-            Your browser does not support audio playback.
-
-        </audio>
-
+    <div id="websiteContent" class="locked">
 
         <!-- =================================================
              OPENING
         ================================================== -->
-
-        <section class="screen active"
-                 id="opening">
-
+        <section class="screen active" id="opening">
             <div class="glow"></div>
-
             <div class="opening-content">
-
-                <div class="flower">
-                    🌷
-                </div>
-
-                <p class="small-title">
-                    A LITTLE SURPRISE FOR YOU
-                </p>
-
-                <h1>
-                    Happy Teacher's Day,
-                    <span>Ma'am</span>
-                </h1>
-
-                <p class="intro">
-                    I created something small,
-                    but from the heart. ❤️
-                </p>
-
-                <button
-                    type="button"
-                    class="main-btn"
-                    onclick="startSurprise()">
-
-                    ✨ Click to Begin ✨
-
-                </button>
-
+                <div class="flower">🌷</div>
+                <p class="small-title">A LITTLE SURPRISE FOR YOU</p>
+                <h1>Happy Teacher's Day, <span>Ma'am</span></h1>
+                <p class="intro">I created something small, but from the heart. ❤️</p>
+                <button type="button" class="main-btn" onclick="startSurprise()">✨ Click to Begin ✨</button>
             </div>
-
         </section>
-
 
 
         <!-- =================================================
              MESSAGE 1
         ================================================== -->
-
-        <section class="screen"
-                 id="message1">
-
+        <section class="screen" id="message1">
             <div class="card">
-
-                <div class="icon">
-                    🌷
-                </div>
-
-                <p class="small-title">
-                    BEFORE YOU CONTINUE...
-                </p>
-
-                <h2>
-                    There is something<br>
-                    I have always wanted to say.
-                </h2>
-
+                <div class="icon">🌷</div>
+                <p class="small-title">BEFORE YOU CONTINUE...</p>
+                <h2>There is something<br>I have always wanted to say.</h2>
                 <div class="line"></div>
-
-                <p class="message">
-                    Some teachers teach from books,
-                    but the truly special ones teach
-                    from the heart.
-                </p>
-
-                <button
-                    type="button"
-                    class="main-btn"
-                    onclick="nextSection('message2')">
-
-                    Continue ✨
-
-                </button>
-
+                <p class="message">Some teachers teach from books, but the truly special ones teach from the heart.</p>
+                <button type="button" class="main-btn" onclick="nextSection('message2')">Continue ✨</button>
             </div>
-
         </section>
-
 
 
         <!-- =================================================
              MESSAGE 2
         ================================================== -->
-
-        <section class="screen"
-                 id="message2">
-
+        <section class="screen" id="message2">
             <div class="card wide">
-
-                <div class="icon">
-                    📚
-                </div>
-
-                <p class="small-title">
-                    MORE THAN LESSONS
-                </p>
-
-                <h2>
-                    You didn't just teach us subjects...
-                </h2>
-
-                <p class="big-message">
-
-                    You taught us how to believe in ourselves,
-                    how to face challenges with confidence,
-                    and how to keep learning even when things
-                    become difficult.
-
-                </p>
-
-                <p class="highlight">
-                    Your lessons didn't end when the classroom did.
-                </p>
-
-                <button
-                    type="button"
-                    class="main-btn"
-                    onclick="nextSection('cards')">
-
-                    There's more... 💫
-
-                </button>
-
+                <div class="icon">📚</div>
+                <p class="small-title">MORE THAN LESSONS</p>
+                <h2>You didn't just teach us subjects...</h2>
+                <p class="big-message">You taught us how to believe in ourselves, how to face challenges with confidence, and how to keep learning even when things become difficult.</p>
+                <p class="highlight">Your lessons didn't end when the classroom did.</p>
+                <button type="button" class="main-btn" onclick="nextSection('cards')">There's more... 💫</button>
             </div>
-
         </section>
-
 
 
         <!-- =================================================
              APPRECIATION CARDS
         ================================================== -->
-
-        <section class="screen"
-                 id="cards">
-
+        <section class="screen" id="cards">
             <div class="section-content">
-
-                <p class="small-title">
-                    A FEW THINGS I AM GRATEFUL FOR
-                </p>
-
-                <h2 class="section-title">
-                    Thank You, Ma'am ❤️
-                </h2>
-
-
+                <p class="small-title">A FEW THINGS I AM GRATEFUL FOR</p>
+                <h2 class="section-title">Thank You, Ma'am ❤️</h2>
+                
                 <div class="cards-container">
-
-
                     <!-- CARD 1 -->
-
-                    <div class="app-card"
-                         onclick="openCard(this)">
-
+                    <div class="app-card" onclick="openCard(this)">
                         <div class="card-front">
-
                             <span>🌷</span>
-
-                            <h3>
-                                Your Guidance
-                            </h3>
-
-                            <p>
-                                Click to open
-                            </p>
-
+                            <h3>Your Guidance</h3>
+                            <p>Click to open</p>
                         </div>
-
-
                         <div class="card-back">
-
-                            <p>
-
-                                You didn't just teach me subjects -
-                                you shaped who I am today.
-                                I may no longer sit in your classroom,
-                                but the lessons you taught still guide
-                                me through life.
-
-                            </p>
-
+                            <p>You didn't just teach me subjects - you shaped who I am today. I may no longer sit in your classroom, but the lessons you taught still guide me through life.</p>
                         </div>
-
                     </div>
-
-
 
                     <!-- CARD 2 -->
-
-                    <div class="app-card"
-                         onclick="openCard(this)">
-
+                    <div class="app-card" onclick="openCard(this)">
                         <div class="card-front">
-
                             <span>✨</span>
-
-                            <h3>
-                                What You Gave
-                            </h3>
-
-                            <p>
-                                Click to open
-                            </p>
-
+                            <h3>What You Gave</h3>
+                            <p>Click to open</p>
                         </div>
-
-
                         <div class="card-back">
-
-                            <p>
-
-                                Missing you is proof that you gave me
-                                more than knowledge - you gave me
-                                values, confidence, and belief in myself.
-                                I will always be grateful for everything
-                                you've done.
-
-                            </p>
-
+                            <p>Missing you is proof that you gave me more than knowledge - you gave me values, confidence, and belief in myself. I will always be grateful for everything you've done.</p>
                         </div>
-
                     </div>
-
-
 
                     <!-- CARD 3 -->
-
-                    <div class="app-card"
-                         onclick="openCard(this)">
-
+                    <div class="app-card" onclick="openCard(this)">
                         <div class="card-front">
-
                             <span>📖</span>
-
-                            <h3>
-                                Your Counsel
-                            </h3>
-
-                            <p>
-                                Click to open
-                            </p>
-
+                            <h3>Your Counsel</h3>
+                            <p>Click to open</p>
                         </div>
-
-
                         <div class="card-back">
-
-                            <p>
-
-                                Because of your wise counsel and guidance,
-                                I face the present with greater confidence.
-                                The formal and informal lessons I learned
-                                from you will always remain with me, Ma'am.
-
-                            </p>
-
+                            <p>Because of your wise counsel and guidance, I face the present with greater confidence. The formal and informal lessons I learned from you will always remain with me, Ma'am.</p>
                         </div>
-
                     </div>
-
-
 
                     <!-- CARD 4 -->
-
-                    <div class="app-card"
-                         onclick="openCard(this)">
-
+                    <div class="app-card" onclick="openCard(this)">
                         <div class="card-front">
-
                             <span>❤️</span>
-
-                            <h3>
-                                Your Impact
-                            </h3>
-
-                            <p>
-                                Click to open
-                            </p>
-
+                            <h3>Your Impact</h3>
+                            <p>Click to open</p>
                         </div>
-
-
                         <div class="card-back">
-
-                            <p>
-
-                                Your words, patience and guidance
-                                have made a difference that I will
-                                always remember.
-
-                            </p>
-
+                            <p>Your words, patience and guidance have made a difference that I will always remember.</p>
                         </div>
-
                     </div>
-
                 </div>
 
-
-
-                <button
-                    type="button"
-                    class="main-btn"
-                    onclick="nextSection('memories')">
-
-                    See Some Memories 📸
-
-                </button>
-
+                <button type="button" class="main-btn" onclick="nextSection('memories')">See Some Memories 📸</button>
             </div>
-
         </section>
-
 
 
         <!-- =================================================
              THREE PHOTO MEMORIES
         ================================================== -->
-
-        <section class="screen"
-                 id="memories">
-
+        <section class="screen" id="memories">
             <div class="section-content">
-
-                <p class="small-title">
-                    A FEW BEAUTIFUL MEMORIES
-                </p>
-
-                <h2 class="section-title">
-                    Moments to Remember ❤️
-                </h2>
-
-                <p class="photo-intro">
-
-                    Some moments become special simply because
-                    of the people who are a part of them.
-                    These are a few memories I will always cherish.
-
-                </p>
-
+                <p class="small-title">A FEW BEAUTIFUL MEMORIES</p>
+                <h2 class="section-title">Moments to Remember ❤️</h2>
+                <p class="photo-intro">Some moments become special simply because of the people who are a part of them. These are a few memories I will always cherish.</p>
 
                 <div class="photo-gallery">
-
                     <div class="photo-frame">
-
-                        <img
-                            src="photo1.jpeg"
-                            alt="Memory with Ma'am"
-                        >
-
+                        <img src="photo1.jpeg" alt="Memory with Ma'am">
                     </div>
-
-
                     <div class="photo-frame">
-
-                        <img
-                            src="photo2.jpeg"
-                            alt="Memory with Ma'am"
-                        >
-
+                        <img src="photo2.jpeg" alt="Memory with Ma'am">
                     </div>
-
-
                     <div class="photo-frame">
-
-                        <img
-                            src="photo3.jpeg"
-                            alt="Memory with Ma'am"
-                        >
-
+                        <img src="photo3.jpeg" alt="Memory with Ma'am">
                     </div>
-
                 </div>
 
-
-                <button
-                    type="button"
-                    class="main-btn"
-                    onclick="nextSection('personal')">
-
-                    Continue with a Smile ✨
-
-                </button>
-
+                <button type="button" class="main-btn" onclick="nextSection('personal')">Continue with a Smile ✨</button>
             </div>
-
         </section>
-
 
 
         <!-- =================================================
              PERSONAL MESSAGE
         ================================================== -->
-
-        <section class="screen"
-                 id="personal">
-
+        <section class="screen" id="personal">
             <div class="card wide personal-card">
-
-                <div class="icon">
-                    💌
-                </div>
-
-                <p class="small-title">
-                    FROM MY HEART
-                </p>
-
-                <h2>
-                    Thank You, Ma'am
-                </h2>
-
+                <div class="icon">💌</div>
+                <p class="small-title">FROM MY HEART</p>
+                <h2>Thank You, Ma'am</h2>
                 <div class="line"></div>
-
-
+                
                 <p class="personal-message">
-
-                    Thank you for being far more than just a teacher.
-                    Your lessons didn't end when the classroom did;
-                    they became values I carry with me, shaping the
-                    person I am and the person I aspire to become.
-
+                    Thank you for being far more than just a teacher. Your lessons didn't end when the classroom did; they became values I carry with me, shaping the person I am and the person I aspire to become.
                 </p>
-
-
+                
                 <p class="personal-message">
-
-                    I may not always be able to express how much
-                    your guidance means to me, but I will always
-                    remember the patience, encouragement and
-                    knowledge you have given me.
-
+                    I may not always be able to express how much your guidance means to me, but I will always remember the patience, encouragement and knowledge you have given me.
                 </p>
-
 
                 <p class="special">
-
                     Thank you for believing in your students. 🌷
-
                 </p>
 
-
-                <button
-                    type="button"
-                    class="main-btn"
-                    onclick="nextSection('music')">
-
-                    A Little More ✨
-
-                </button>
-
+                <button type="button" class="main-btn" onclick="nextSection('final')">Final Message 🌷</button>
             </div>
-
         </section>
-
-
-
-        <!-- =================================================
-             MUSIC
-        ================================================== -->
-
-        <section class="screen"
-                 id="music">
-
-            <div class="card music-card">
-
-                <div class="music-icon">
-                    🎵
-                </div>
-
-                <p class="small-title">
-                    A LITTLE MUSIC FOR YOU
-                </p>
-
-                <h2>
-                    This song is for you, Ma'am.
-                </h2>
-
-                <p class="message">
-
-                    Because some feelings are easier to express
-                    through music. ❤️
-
-                </p>
-
-
-                <button
-                    type="button"
-                    class="music-btn"
-                    onclick="toggleMusic()"
-                    id="musicButton">
-
-                    ▶ Play Music
-
-                </button>
-
-
-                <button
-                    type="button"
-                    class="main-btn"
-                    onclick="nextSection('final')">
-
-                    Final Message 🌷
-
-                </button>
-
-            </div>
-
-        </section>
-
 
 
         <!-- =================================================
              FINAL
         ================================================== -->
-
-        <section class="screen"
-                 id="final">
-
+        <section class="screen" id="final">
             <div class="final-content">
-
-                <div class="final-flower">
-                    🌷
-                </div>
-
-                <p class="small-title">
-                    WITH GRATITUDE & RESPECT
-                </p>
-
-                <h1>
-                    Happy Teacher's Day,
-                    <span>Ma'am!</span>
-                </h1>
-
+                <div class="final-flower">🌷</div>
+                <p class="small-title">WITH GRATITUDE & RESPECT</p>
+                <h1>Happy Teacher's Day, <span>Ma'am!</span></h1>
                 <div class="gold-line"></div>
-
-
+                
                 <p class="final-message">
-
-                    Thank you for teaching,
-                    inspiring and believing in us.
-
+                    Thank you for teaching, inspiring and believing in us.
                 </p>
 
-
-                <p class="quote">
-
-                    “The influence of a great teacher can never be erased.”
-
-                </p>
-
+                <p class="quote">“The influence of a great teacher can never be erased.”</p>
 
                 <div class="signature">
-
                     With heartfelt gratitude,<br>
-
-                    <strong>
-                        From Your future software engineer student,
-                    </strong><br>
-
-                    <span>
-                        Archita Gaur 💻❤️
-                    </span>
-
+                    <strong>From Your future software engineer student,</strong><br>
+                    <span>Archita Gaur 💻❤️</span>
                 </div>
 
-
-                <button
-                    type="button"
-                    class="restart-btn"
-                    onclick="restart()">
-
-                    ↻ Experience Again
-
-                </button>
-
+                <button type="button" class="restart-btn" onclick="restart()">↻ Experience Again</button>
             </div>
-
         </section>
 
     </div>
 
-
     <script src="script.js"></script>
-
 </body>
-
 </html>
